@@ -1,9 +1,9 @@
 <?php
 
-namespace SolutionForest\FilamentHeaderSelect\Livewire;
+namespace Fabianosfbr\FilamentHeaderSelect\Livewire;
 
 use Livewire\Component;
-use SolutionForest\FilamentHeaderSelect\HeaderSelectPlugin;
+use Fabianosfbr\FilamentHeaderSelect\HeaderSelectPlugin;
 
 class HeaderSelectComponent extends Component
 {

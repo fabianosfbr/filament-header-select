@@ -1,6 +1,6 @@
 <?php
 
-namespace SolutionForest\FilamentHeaderSelect\Components;
+namespace Fabianosfbr\FilamentHeaderSelect\Components;
 
 use Closure;
 use Filament\Support\Concerns\EvaluatesClosures;

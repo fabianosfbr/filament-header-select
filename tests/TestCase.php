@@ -1,10 +1,10 @@
 <?php
 
-namespace SolutionForest\FilamentHeaderSelect\Tests;
+namespace Fabianosfbr\FilamentHeaderSelect\Tests;
 
 use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
-use SolutionForest\FilamentHeaderSelect\HeaderSelectServiceProvider;
+use Fabianosfbr\FilamentHeaderSelect\HeaderSelectServiceProvider;
 
 class TestCase extends Orchestra
 {

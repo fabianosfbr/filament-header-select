@@ -1,6 +1,6 @@
 <?php
 
-use SolutionForest\FilamentHeaderSelect\Components\HeaderSelect;
+use Fabianosfbr\FilamentHeaderSelect\Components\HeaderSelect;
 
 it('can create a header select', function () {
     $select = HeaderSelect::make('test');

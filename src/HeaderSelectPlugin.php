@@ -1,6 +1,6 @@
 <?php
 
-namespace SolutionForest\FilamentHeaderSelect;
+namespace Fabianosfbr\FilamentHeaderSelect;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;

@@ -1,6 +1,6 @@
 <?php
 
-namespace SolutionForest\FilamentHeaderSelect;
+namespace Fabianosfbr\FilamentHeaderSelect;
 
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
@@ -17,7 +17,7 @@ class HeaderSelectServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'filament-header-select');
 
         // Register Livewire component alias (used by @livewire('header-select-component'))
-        Livewire::component('header-select-component', \SolutionForest\FilamentHeaderSelect\Livewire\HeaderSelectComponent::class);
+        Livewire::component('header-select-component', \Fabianosfbr\FilamentHeaderSelect\Livewire\HeaderSelectComponent::class);
 
         if ($this->app->runningInConsole()) {
             $this->publishes([

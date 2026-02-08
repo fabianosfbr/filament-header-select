@@ -1,14 +1,8 @@
-<p align="center"><a href="https://solutionforest.com" target="_blank"><img src="https://github.com/solutionforest/.github/blob/main/docs/images/sf.png?raw=true" width="150"></a></p>
+<p align="center"><a href="https://github.com/fabianosfbr" target="_blank">Fabiano S. Ferreira</a></p>
 
-## About Solution Forest
+## About This Fork
 
-[Solution Forest](https://solutionforest.com) Web development agency based in Hong Kong. We help customers to solve their problems. We Love Open Soruces. 
-
-We have built a collection of best-in-class products:
-
-- [InspireCMS](https://inspirecms.net): A full-featured Laravel CMS with everything you need out of the box. Build smarter, ship faster with our complete content management solution.
-- [Filaletter](https://filaletter.solutionforest.net): Filaletter - Filament Newsletter Plugin
-- [Website CMS Management](https://filamentphp.com/plugins/solution-forest-cms-website): A hands-on Filament CMS plugin for those who prefer more manual control over their website content management.
+This package is a fork of the original [solution-forest/filament-header-select](https://github.com/solution-forest/filament-header-select) package. All credit goes to the original authors at [Solution Forest](https://solutionforest.com) for creating this excellent plugin.
 
 # Filament Header Select
 
@@ -29,14 +23,14 @@ A modern header navigation component for Filament Admin with **global rounded st
 ## Installation
 
 ```bash
-composer require solution-forest/filament-header-select
+composer require fabianosfbr/filament-header-select
 ```
 
 ## Quick Start
 
 ```php
-use SolutionForest\FilamentHeaderSelect\HeaderSelectPlugin;
-use SolutionForest\FilamentHeaderSelect\Components\HeaderSelect;
+use Fabianosfbr\FilamentHeaderSelect\HeaderSelectPlugin;
+use Fabianosfbr\FilamentHeaderSelect\Components\HeaderSelect;
 
 public function panel(Panel $panel): Panel
 {
@@ -50,7 +44,7 @@ public function panel(Panel $panel): Panel
                         ->label('Admin')
                         ->url(fn() => route('filament.admin.pages.dashboard'))
                         ->color('primary'),
-                        
+
                     // Dropdown with Navigation
                     HeaderSelect::make('agent_config')
                         ->label('Agent Config')
@@ -112,6 +106,8 @@ HeaderSelect::make('item')
 
 ### URL Navigation
 ```php
+use Fabianosfbr\FilamentHeaderSelect\Components\HeaderSelect;
+
 HeaderSelect::make('dashboard')
     ->label('Dashboard')
     ->url(fn() => route('filament.admin.pages.dashboard'))
@@ -121,6 +117,8 @@ HeaderSelect::make('dashboard')
 
 ### Dropdown with Redirect
 ```php
+use Fabianosfbr\FilamentHeaderSelect\Components\HeaderSelect;
+
 HeaderSelect::make('categories')
     ->label('Categories')
     ->options([
@@ -137,6 +135,8 @@ HeaderSelect::make('categories')
 
 ### Dynamic Options from Database
 ```php
+use Fabianosfbr\FilamentHeaderSelect\Components\HeaderSelect;
+
 HeaderSelect::make('agents')
     ->label('AI Agents')
     ->options(fn() => Agent::pluck('name', 'id'))
@@ -167,5 +167,6 @@ MIT License. See [LICENSE.md](LICENSE.md) for details.
 
 ## Credits
 
-- **[Solution Forest](https://github.com/solution-forest)** - Package development
+- **Original Package**: All credit goes to [Solution Forest](https://github.com/solution-forest) for the original [solution-forest/filament-header-select](https://github.com/solution-forest/filament-header-select) package
+- **Fork Maintainer**: [Fabiano S. Ferreira](https://github.com/fabianosfbr) - Continuing development
 - **[Filament](https://filamentphp.com)** - Laravel admin framework
